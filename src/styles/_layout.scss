@@ -1,0 +1,25 @@
+$bg-color: black;
+
+@mixin wrappers {
+}
+
+.App {
+  .navigation {
+    width: 100%;
+    height: 8vh;
+    background: $bg-color;
+    @media screen and (max-width: 1000px) {
+      position: relative;
+    }
+  }
+
+  .main_content {
+    width: 100%;
+    height: 82vh;
+  }
+
+  .footer {
+    width: 100%;
+    height: 10vh;
+  }
+}
