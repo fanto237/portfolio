@@ -15,7 +15,8 @@ $bg-color: black;
 
   .main_content {
     width: 100%;
-    height: 82vh;
+    // height: 82vh;
+    min-height: 82vh;
   }
 
   .footer {

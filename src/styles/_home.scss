@@ -8,7 +8,7 @@ $fr-color: rgba(86, 233, 86, 0.657);
 
   .videoTag {
     width: 100%;
-    height: 130%;
+    height: 82vh;
     object-fit: cover;
     position: absolute;
     z-index: -1;
@@ -76,6 +76,11 @@ $fr-color: rgba(86, 233, 86, 0.657);
       }
 
       button {
+        a {
+          text-decoration: none;
+          color: inherit;
+          cursor: pointer;
+        }
         font-size: 1.5rem;
         margin-top: 30px;
         text-decoration: none;

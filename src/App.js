@@ -29,7 +29,7 @@ function App() {
               <Blog />
             </Route>
 
-            <Route path="about">
+            <Route path="/about">
               <About />
             </Route>
           </Switch>

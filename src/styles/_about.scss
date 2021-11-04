@@ -1,0 +1,106 @@
+$fr-color: rgba(86, 233, 86, 0.657);
+$img-size: 500px;
+$space-wrapper: 50px;
+
+.wrapper {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: $space-wrapper;
+  margin-top: $space-wrapper;
+
+  .about-title {
+    width: 70%;
+    margin-bottom: 90px;
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    .image-content {
+      margin-right: 50px;
+      .image {
+        width: $img-size;
+        height: $img-size;
+      }
+    }
+    .about-text {
+      margin-bottom: 150px;
+      h4 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        span {
+          color: $fr-color;
+          font-size: 2.5rem;
+          text-transform: uppercase;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+      }
+
+      button {
+        margin-top: 50px;
+        margin-left: 100px;
+
+        font-size: 2rem;
+        border: 1px solid black;
+        background: $fr-color;
+        text-decoration: none;
+        padding: 5px 10px;
+        &::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 0;
+          background: transparent;
+          transition: width 0.7s ease, babackground-color 0.5s ease;
+        }
+        &:hover::after {
+          width: 100%;
+          background: black;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}
+
+.wrapper2 {
+  width: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  min-height: 50vh;
+
+  .about-title2 {
+    width: 70%;
+    margin-top: $space-wrapper;
+    margin-bottom: $space-wrapper;
+  }
+}
+
+.wrapper3 {
+  width: 100%;
+  min-height: 50vh;
+  background: white;
+}

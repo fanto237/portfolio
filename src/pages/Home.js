@@ -2,6 +2,7 @@ import React from "react";
 import videoLink from "../assets/videos/video.mp4";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
             Feel free to click to the button down below, to know more about me
           </p>
           <button>
-            Learn More <FontAwesomeIcon icon={faArrowCircleRight} />
+            <Link to="/about" className="toAbou"t> Learn More <FontAwesomeIcon icon={faArrowCircleRight} /></Link>
           </button>
         </div>
       </div>
