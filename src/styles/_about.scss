@@ -6,8 +6,8 @@ $space-wrapper: 50px;
   display: $position;
   background: $bg-color;
   color: $fr-color;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 150px;
+  padding-right: 150px;
   padding-bottom: $space-wrapper;
   padding-top: $space-wrapper;
   justify-content: center;
@@ -24,11 +24,12 @@ $space-wrapper: 50px;
   .skill-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // row-gap: 500px;
     column-gap: 30px;
   }
 }
 
 .wrapper3 {
   @include about-wrapper(white, black, flex);
+  min-height: 40vh;
+  height: 60vh;
 }

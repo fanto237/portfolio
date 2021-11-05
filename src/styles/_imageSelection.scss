@@ -1,16 +1,16 @@
 $fr-color: rgba(86, 233, 86, 0.657);
-$img-size: 500px;
+$img-size: 400px;
 
 .about-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 80%;
 
   .image-content {
     margin-right: 50px;
     .image {
-      width: $img-size;
+      width: 500px;
       height: $img-size;
     }
   }

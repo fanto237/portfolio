@@ -34,18 +34,18 @@ function About() {
       });
   }, [query]);
 
+  if (!me) return <div>Loading...</div>;
+
   return (
     <>
       <div className="wrapper">
         <Metadecoration title={title} description="lfashoifahoiheioahfih" />
         <Title title={title} span={title} myColor="black" />
-        {me && (
-          <ImageSection
-            name={me.name}
-            content={me.bio}
-            image={urlFor(me.authorImage).url()}
-          />
-        )}
+        <ImageSection
+          name={me.name}
+          content={me.bio}
+          image={urlFor(me.authorImage).url()}
+        />
       </div>
       <div className="wrapper2">
         <Title title="My Skills" span="My Skills" />

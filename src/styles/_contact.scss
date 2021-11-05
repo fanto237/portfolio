@@ -6,11 +6,13 @@ $fr-color: rgba(86, 233, 86, 0.657);
   background: rgba(203, 221, 203, 0.315);
 }
 .contact {
-  margin-top: 250px;
-  margin-bottom: 350px;
+  margin-top: 50px;
   font-size: 1.7rem;
+  margin-bottom: 250px;
+  padding-bottom: 10px;
+  width: 70%;
   .content {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     a {
       @include important();
     }
