@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import cv from "../assets/Lebenslauf.pdf";
 // import { Link } from "react-router-dom";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import Metadecoration from "../components/Metadecoration";
 
 function About() {
   const title = "About Me";
@@ -12,6 +13,7 @@ function About() {
   return (
     <>
       <div className="wrapper">
+        <Metadecoration title="About Me" description="lfashoifahoiheioahfih" />
         <div className="about-title">
           <Title title={title} span={title} myColor="black" />
         </div>

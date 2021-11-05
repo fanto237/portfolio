@@ -3,10 +3,12 @@ import videoLink from "../assets/videos/video.mp4";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import Metadecoration from "../components/Metadecoration";
 
 function Home() {
   return (
     <div className="home">
+      <Metadecoration title="Home" description="dfgdgfdgrgd" />
       <video className="videoTag" autoPlay loop muted>
         <source src={videoLink} type="video/mp4" />
       </video>
@@ -20,7 +22,10 @@ function Home() {
             Feel free to click to the button down below, to know more about me
           </p>
           <button>
-            <Link to="/about" className="toAbou"t> Learn More <FontAwesomeIcon icon={faArrowCircleRight} /></Link>
+            <Link to="/about" className="toAbou" t>
+              {" "}
+              Learn More <FontAwesomeIcon icon={faArrowCircleRight} />
+            </Link>
           </button>
         </div>
       </div>
