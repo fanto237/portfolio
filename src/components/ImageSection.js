@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import BlockContent from "@sanity/block-content-to-react";
+import { Link } from "react-router-dom";
 
 function ImageSection({ name, content, image }) {
   return (
@@ -21,10 +22,10 @@ function ImageSection({ name, content, image }) {
           />
         </p>
         <button>
-          <a href="Lebenslauf.pdf">
+          <Link to="/files/Lebenslauf.pdf" target="_blank" download>
             Download CV
             <FontAwesomeIcon icon={faDownload} />
-          </a>
+          </Link>
         </button>
       </div>
     </div>

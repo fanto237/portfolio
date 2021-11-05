@@ -10,7 +10,7 @@ function Contact() {
           luciensiani@gmail.com
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
-        , I am also on discord with the tag <span>FantoSama#1231</span>
+        , I am also on discord with the tag <span>FantoSama#1231</span>.
       </p>
       <p className="content2">
         You can also find me in the social network with the name{" "}
