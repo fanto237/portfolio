@@ -14,9 +14,13 @@ $fr-color: rgba(86, 233, 86, 0.657);
     a {
       @include important();
     }
+    span {
+      @include important();
+    }
   }
-}
-
-span {
-  @include important();
+  .content2 {
+    span {
+      @include important();
+    }
+  }
 }
