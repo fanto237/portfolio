@@ -1,5 +1,10 @@
 import "./App.scss";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -11,7 +16,7 @@ import SinglePost from "./components/SinglePost";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter basename="/">
         <div className="navigation">
           <Navbar />
         </div>
@@ -29,7 +34,7 @@ function App() {
         <div className="footer">
           <Footer />
         </div>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
