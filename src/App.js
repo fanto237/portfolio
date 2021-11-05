@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
+import SinglePost from "./components/SinglePost";
 
 function App() {
   return (
@@ -17,21 +18,11 @@ function App() {
 
         <div className="main_content">
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-
-            <Route path="/projects">
-              <Projects />
-            </Route>
-
-            <Route path="/blog">
-              <Blog />
-            </Route>
-
-            <Route path="/about">
-              <About />
-            </Route>
+            <Route exact path="/" component={Home} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/posts" component={Blog} />
+            <Route path="/posts/:slug" component={SinglePost} />
+            <Route path="/about" component={About} />
           </Switch>
         </div>
 

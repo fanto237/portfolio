@@ -44,7 +44,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <NavLink
-              to="/blog"
+              to="/posts"
               onClick={handleclick}
               activeClassName="active"
               className="nav-links"
