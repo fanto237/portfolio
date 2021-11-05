@@ -52,9 +52,11 @@ function About() {
         <div className="skill-wrapper">
           <SkillSection skill="Javascript" progression="99%" />
           <SkillSection skill="React Js" progression="86%" />
-          <SkillSection skill="Java" progression="85%" />
-          <SkillSection skill="Python" progression="60%" />
+          <SkillSection skill="Java" progression="80%" />
+          <SkillSection skill="C++" progression="85%" />
+          <SkillSection skill="Python" progression="67%" />
           <SkillSection skill="UML" progression="80%" />
+          <SkillSection skill="Flutter" progression="60%" />
           <SkillSection skill="Shell" progression="75%" />
         </div>
       </div>
