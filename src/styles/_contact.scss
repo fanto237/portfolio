@@ -1,0 +1,22 @@
+$fr-color: rgba(86, 233, 86, 0.657);
+
+@mixin important {
+  text-decoration: none;
+  color: $fr-color;
+  background: rgba(203, 221, 203, 0.315);
+}
+.contact {
+  margin-top: 250px;
+  margin-bottom: 350px;
+  font-size: 1.7rem;
+  .content {
+    margin-bottom: 15px;
+    a {
+      @include important();
+    }
+  }
+}
+
+span {
+  @include important();
+}

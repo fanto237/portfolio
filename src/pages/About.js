@@ -5,12 +5,20 @@ import ImageSection from "../components/ImageSection";
 import SkillSection from "../components/SkillSection";
 import { useEffect, useState } from "react";
 import sanityClient from "../client";
+import imageUrlBuilder from "@sanity/image-url";
+import Contact from "../components/Contact";
+
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
 
 function About() {
   const title = "About Me";
   const query = `*[_type == "author"]{
     name,
     bio,
+    "authorImage": image.asset->url,
 }`;
 
   const [me, setMe] = useState(null);
@@ -29,9 +37,15 @@ function About() {
   return (
     <>
       <div className="wrapper">
-        <Metadecoration title="About Me" description="lfashoifahoiheioahfih" />
+        <Metadecoration title={title} description="lfashoifahoiheioahfih" />
         <Title title={title} span={title} myColor="black" />
-        <ImageSection name={me.name} content={me.bio} image={} />
+        {me && (
+          <ImageSection
+            name={me.name}
+            content={me.bio}
+            image={urlFor(me.authorImage).url()}
+          />
+        )}
       </div>
       <div className="wrapper2">
         <Title title="My Skills" span="My Skills" />
@@ -47,6 +61,7 @@ function About() {
 
       <div className="wrapper3">
         <Title title="Contact Me" span="Contact Me" />
+        <Contact />
       </div>
     </>
   );
