@@ -22,7 +22,11 @@ function Footer() {
         </a>
       </div>
       <p className="copyright">
-        &copy; 2021 Siani Lucien, Germany All Rights reserved.
+        &copy; 2021 Siani Lucien, Germany All Rights reserved. The site's source
+        code can be found on{" "}
+        <a href="https://github.com/fantoSama/portfolio" target="null">
+          Github
+        </a>
       </p>
     </div>
   );
