@@ -26,15 +26,17 @@ $fr-color: rgba(86, 233, 86, 0.657);
         .progress {
           position: relative;
           height: 4px;
+          width: 100%;
           background: rgba(203, 221, 203, 0.315);
-          //   transition: width 0.7s ease, babackground-color 0.5s ease;
-          animation: filling 3s;
+          animation: filling 4s;
           @keyframes filling {
             0% {
-              width: 0%;
+              transform: scaleX(0);
+              transform-origin: left;
             }
             100% {
-              width: 100%;
+              transform: scaleX(1);
+              transform-origin: left;
             }
           }
           .inner-progress {

@@ -12,6 +12,7 @@ $img-size: 400px;
     margin-right: 50px;
     .image {
       width: 500px;
+      border-radius: 5px;
       height: $img-size;
     }
   }
@@ -28,75 +29,76 @@ $img-size: 400px;
       }
     }
     p {
+      margin-bottom: 50px;
       font-size: 1.5rem;
     }
 
-    button {
-      margin-top: 50px;
+    .button {
       margin-left: 100px;
-
-      font-size: 2rem;
-      border: 1px solid black;
+      color: black;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      width: max-content;
+      position: relative;
       background: $fr-color;
       text-decoration: none;
       padding: 5px 10px;
+      border-radius: 5px;
       &::after {
         content: "";
-        display: block;
-        height: 3px;
-        width: 0;
-        background: transparent;
-        transition: width 0.7s ease, babackground-color 0.5s ease;
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        transform: scaleX(0);
+        transition: transform 500ms ease;
+        background: black;
+        transform-origin: left;
       }
       &:hover::after {
-        width: 100%;
-        background: black;
-      }
-
-      a {
-        text-decoration: none;
-        color: black;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        font-size: 1.4rem;
+        transform: scaleX(1);
+        color: $fr-color;
       }
     }
   }
 }
 
-@media screen and (max-width: 960px) {
-  .about-content {
-    width: 50%;
-    flex-direction: column;
+// @media screen and (max-width: 960px) {
+//   .about-content {
+//     width: 50%;
+//     flex-direction: column;
 
-    .image-content {
-      .image {
-        width: 350px;
-        height: 300px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-      }
-    }
-    .about-text {
-      width: 150%;
-      h4 {
-        font-size: 1.5rem;
-        span {
-          font-size: 2rem;
-        }
-      }
-      p {
-        font-size: 1.25rem;
-      }
+//     .image-content {
+//       .image {
+//         width: 350px;
+//         height: 300px;
+//         margin-bottom: 20px;
+//         margin-top: 20px;
+//       }
+//     }
+//     .about-text {
+//       width: 150%;
+//       h4 {
+//         font-size: 1.5rem;
+//         span {
+//           font-size: 2rem;
+//         }
+//       }
+//       p {
+//         font-size: 1.25rem;
+//       }
 
-      button {
-        &::after {
-        }
-        &:hover::after {
-          a {
-          }
-        }
-      }
-    }
-  }
-}
+//       button {
+//         &::after {
+//         }
+//         &:hover::after {
+//           a {
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

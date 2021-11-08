@@ -1,10 +1,5 @@
 import "./App.scss";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  HashRouter,
-} from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
