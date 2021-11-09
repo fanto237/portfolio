@@ -4,12 +4,11 @@ import Title from "../components/Title";
 
 function Projects() {
   const title = "Projects";
-  return (
-    <div>
-      <Metadecoration title={title} description="lfashoifahoiheioahfih" />
-      <Title title={title} span={title} myColor="black" />
 
-      <h1>Projects</h1>
+  return (
+    <div className="projects">
+      <Metadecoration title={title} description="lfashoifahoiheioahfih" />
+      <div className="wrapper"></div>
     </div>
   );
 }

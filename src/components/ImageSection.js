@@ -20,6 +20,7 @@ function ImageSection({ name, content, image }) {
             dataset="production"
           />
         </p>
+
         <a
           href="/files/Lebenslauf.pdf"
           className="button"
