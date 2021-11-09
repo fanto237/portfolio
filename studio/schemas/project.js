@@ -4,7 +4,7 @@ export default {
   title: "Project",
   fields: [
     {
-      name: "tilte",
+      name: "title",
       type: "string",
       title: "Title",
     },
