@@ -8,6 +8,12 @@ function Projects() {
   const title = "Projects";
   const [project, setProject] = useState(null);
 
+  const query = `*[_type == "project"]{
+    description,
+    link, 
+    title,
+  }`;
+
   return (
     <div className="projects">
       <Metadecoration title={title} description="lfashoifahoiheioahfih" />
