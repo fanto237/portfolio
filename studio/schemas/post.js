@@ -22,6 +22,9 @@ export default {
       name: "description",
       title: "Description",
       type: "string",
+      options: {
+        maxLength: 20,
+      },
     },
 
     {

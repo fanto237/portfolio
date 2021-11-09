@@ -4,7 +4,7 @@ export default {
   title: "Project",
   fields: [
     {
-      name: "tilte",
+      name: "title",
       type: "string",
       title: "Title",
     },
@@ -13,6 +13,9 @@ export default {
       name: "description",
       type: "string",
       title: "description",
+      options: {
+        maxLength: 20,
+      },
     },
 
     {
