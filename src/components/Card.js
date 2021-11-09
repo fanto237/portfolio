@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import bg from "../assets/images/sample.jpg";
 
-function card() {
+function card({ toPrint }) {
   return (
     <div className="card" style={{ "background-image": `url(${bg})` }}>
       <div className="card-content">
