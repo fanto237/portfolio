@@ -5,6 +5,7 @@ $h-content: max-content;
   width: 22rem;
   height: 29rem;
   background-size: cover;
+  background-position: center;
   transform: scale(1);
   padding-top: 14.5rem;
   transition: 500ms;
@@ -13,11 +14,12 @@ $h-content: max-content;
   overflow: hidden;
 
   .card-content {
-    background: linear-gradient(
-      hsl(0 0 0 / 0),
-      hsl(20 0 0 / 0.3) 20%,
-      hsl(0 0 0 / 1)
-    );
+    // background: linear-gradient(
+    //   hsl(0 0 0 / 0),
+    //   hsl(20 0 0 / 0.3) 20%,
+    //   hsl(0 0 0 / 1)
+    // );
+    background-color: red;
     padding: 1.756rem 0;
 
     .card-title {
