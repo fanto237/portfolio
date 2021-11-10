@@ -23,7 +23,7 @@ export default {
       title: "Description",
       type: "string",
       validation: (Rule) =>
-        Rule.max(20).warning(`A title shouldn't be more than 20 characters.`),
+        Rule.max(75).warning(`A title shouldn't be more than 75 characters.`),
     },
 
     {
@@ -40,8 +40,8 @@ export default {
     },
 
     {
-      name: "mainImage",
-      title: "Main image",
+      name: "image",
+      title: "Image",
       type: "image",
       options: {
         hotspot: true,
@@ -65,7 +65,7 @@ export default {
     select: {
       title: "title",
       author: "author.name",
-      media: "mainImage",
+      media: "image",
     },
     prepare(selection) {
       const { author } = selection;

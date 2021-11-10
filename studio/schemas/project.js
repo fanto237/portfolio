@@ -13,9 +13,8 @@ export default {
       name: "description",
       type: "string",
       title: "description",
-      options: {
-        maxLength: 20,
-      },
+      validation: (Rule) =>
+        Rule.max(75).warning(`A title shouldn't be more than 75 characters.`),
     },
 
     {
