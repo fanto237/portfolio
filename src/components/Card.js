@@ -11,13 +11,15 @@ function card({ toPrint }) {
       <div className="card-content">
         <h2 className="card-title">{toPrint.title}</h2>
         <p className="card-description">{toPrint.description}</p>
-        <a
-          className="button"
-          href={toPrint.link == null ? "#" : toPrint.link}
-          target="_blank"
-        >
-          Learn More
-        </a>
+        {toPrint.link != null ? (
+          <a className="button" href={toPrint.link} target="null">
+            Learn More
+          </a>
+        ) : (
+          <Link className="button" to="#">
+            Learn More
+          </Link>
+        )}
       </div>
     </div>
   );
