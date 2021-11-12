@@ -20,7 +20,7 @@ $fr-color: rgba(86, 233, 86, 0.657);
     justify-content: center;
     align-items: center;
     .content_wrapper {
-      margin-top: 300px;
+      margin-top: 15rem;
       text-align: center;
       h1 {
         font-size: 3rem;
@@ -64,6 +64,7 @@ $fr-color: rgba(86, 233, 86, 0.657);
         animation: passing;
         animation-duration: 3s;
         animation-fill-mode: forwards;
+        margin-bottom: 3rem;
 
         @keyframes passing {
           0% {
@@ -75,26 +76,24 @@ $fr-color: rgba(86, 233, 86, 0.657);
         }
       }
 
-      button {
-        a {
-          text-decoration: none;
-          color: inherit;
-          cursor: pointer;
-        }
-        font-size: 1.5rem;
-        margin-top: 30px;
+      .toAbout {
         text-decoration: none;
-        background: transparent;
-        color: $fr-color;
+        color: inherit;
+        cursor: pointer;
+        font-size: 1.5rem;
+        text-decoration: none;
+        background: $fr-color;
+        color: black;
         padding: 10px;
-        border: 1px solid $fr-color;
+        border-radius: 15px;
         transition: 0.2s;
         opacity: 0;
         animation: appears 3s;
         animation-fill-mode: forwards;
         animation-delay: 3s;
         &:hover {
-          transform: translateY(-20px);
+          background: white;
+          // color: $fr-color;
         }
         @keyframes appears {
           0% {
@@ -108,22 +107,66 @@ $fr-color: rgba(86, 233, 86, 0.657);
     }
   }
   @media screen and (max-width: $small-interrupt) {
-    .content {
-      .content_wrapper {
-        margin-top: 150px;
-        h1 {
-          font-size: 2.5rem;
-        }
-        h2 {
-          font-size: 1.5rem;
-          span {
-            font-size: 2rem;
+    .home {
+      .content {
+        .content_wrapper {
+          margin-top: 150px;
+          h1 {
+            font-size: 2.5rem;
           }
-        }
-        bottom {
-          font-size: 1rem;
+          h2 {
+            font-size: 1.5rem;
+            span {
+              font-size: 2rem;
+            }
+          }
+          p {
+            font-size: 1.2rem;
+          }
+          .toAbout {
+            font-size: 1.5rem;
+          }
         }
       }
     }
   }
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+  .home {
+    // height: 50vh;
+    .content {
+      .content_wrapper {
+        margin-top: 15rem;
+        h1 {
+          font-size: 1.9rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+          span {
+            font-size: 1.5rem;
+          }
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        .toAbout {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+// /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+// /* Large desktop */
+@media (min-width: 1200px) {
 }

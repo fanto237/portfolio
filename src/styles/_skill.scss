@@ -1,12 +1,13 @@
 $fr-color: rgba(86, 233, 86, 0.657);
 
 .skill-section {
-  margin: 80px 0;
-  width: 16vw;
+  margin-top: 3rem;
+  width: 100%;
   .skill-container {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    width: 100%;
     .skill-title {
       color: $fr-color;
       font-size: 1.5rem;
@@ -42,7 +43,6 @@ $fr-color: rgba(86, 233, 86, 0.657);
           .inner-progress {
             position: absolute;
             height: 4px;
-            // width: 63%;
             bottom: 0;
             left: 0;
             background: $fr-color;
@@ -52,3 +52,35 @@ $fr-color: rgba(86, 233, 86, 0.657);
     }
   }
 }
+// /* Landscape phones and down */
+// @media (max-width: 960px) {
+//   .skill-section {
+//     .skill-container {
+//       .skill-title {
+//       }
+//       .skill-bar {
+//         .skill-number {
+//         }
+//         .skill-progress {
+//           .progress {
+//             width: 1;
+//             .inner-progress {
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // /* Landscape phone to portrait tablet */
+// @media (max-width: 767px) {
+// }
+
+// // /* Portrait tablet to landscape and desktop */
+// @media (min-width: 768px) and (max-width: 979px) {
+// }
+
+// // /* Large desktop */
+// @media (min-width: 1200px) {
+// }

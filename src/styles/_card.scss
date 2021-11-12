@@ -73,7 +73,7 @@ $h-content: max-content;
   }
 }
 
-@media (hover) {
+@mixin noHover {
   .card-content {
     transform: translateY(65%);
     transition: transform 500ms ease;
@@ -99,19 +99,54 @@ $h-content: max-content;
     transform: scaleX(0);
   }
 }
-// .card:hover {
-// }
 
-// @media screen and (max-widt:) {
-//     .card{
-//         .card-title{
+@media (hover) {
+  @include noHover();
+}
 
-//         }
-//         .card-description{
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+  @include noHover();
+  .card {
+    width: 18rem;
+    height: 20rem;
+    padding-top: 5.5rem;
 
-//         }
-//         .see-more{
+    .card-content {
+      .card-title {
+      }
+      .card-description {
+      }
+      .button {
+      }
+    }
+  }
+}
 
-//         }
-//     }
-// }
+// /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .card {
+    .card-content {
+      .card-title {
+      }
+      .card-description {
+      }
+      .button {
+      }
+    }
+  }
+}
+
+/* Large desktop */
+@media (max-width: 1450px) {
+  .card {
+    .card-content {
+      .card-title {
+      }
+      .card-description {
+      }
+      .button {
+      }
+    }
+  }
+}

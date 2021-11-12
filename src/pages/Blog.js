@@ -36,7 +36,7 @@ function Blog() {
       <Metadecoration title={title} description="lfashoifahoiheioahfih" />
       <div className="wrapper">
         <Title title={title} span={title} myColor="black" />
-        <div className="post-container">
+        <div className="card-container">
           {blogs && blogs.map((blog) => <Card toPrint={blog} />)}
         </div>
       </div>

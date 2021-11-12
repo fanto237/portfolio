@@ -17,7 +17,7 @@ function Footer() {
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="https://twitter.com/lucienSiani" target="null">
+        <a href="https://twitter.com/fantosama" target="null">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
       </div>
@@ -25,7 +25,7 @@ function Footer() {
         &copy; 2021 Siani Lucien, Germany All Rights reserved. The site's source
         code can be found on{" "}
         <a href="https://github.com/fantoSama/portfolio" target="null">
-          Github
+          Github.
         </a>
       </p>
     </div>

@@ -1,12 +1,52 @@
-.projects {
+.wrapper {
+  .card-container {
+    margin-top: 5rem;
+    display: grid;
+    place-items: center;
+    row-gap: 4rem;
+    column-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
   .wrapper {
     .card-container {
       margin-top: 5rem;
       display: grid;
       place-items: center;
-      row-gap: 4rem;
-      column-gap: 4rem;
-      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .wrapper {
+    .card-container {
+      display: grid;
+      place-items: center;
+      column-gap: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+// /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1450px) {
+  .wrapper {
+    .card-container {
+      display: grid;
+      place-items: center;
+      row-gap: 4rem;
+      column-gap: 4rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// /* Large desktop */
+@media (min-width: 1450px) {
 }

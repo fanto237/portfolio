@@ -1,36 +1,42 @@
 $fr-color: rgba(86, 233, 86, 0.657);
-$img-size: 400px;
 
 .about-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 100%;
+  height: 100%;
   margin-top: 30px;
 
   .image-content {
-    margin-right: 50px;
+    // margin-right: 50px;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 10rem;
     .image {
-      width: 500px;
+      width: 70%;
       border-radius: 5px;
-      height: $img-size;
+      height: 50%;
     }
   }
   .about-text {
-    margin-bottom: 150px;
+    width: 50%;
+    margin-bottom: 4rem;
     color: black;
+    font-size: 1.5rem;
     h4 {
-      font-size: 2rem;
+      font-size: 100%;
       margin-bottom: 10px;
       span {
         color: $fr-color;
-        font-size: 2.5rem;
+        font-size: 125%;
+
         text-transform: uppercase;
       }
     }
     p {
       margin-bottom: 50px;
-      font-size: 1.5rem;
+      font-size: 83, 33%;
     }
 
     .button {
@@ -38,7 +44,8 @@ $img-size: 400px;
       color: black;
       letter-spacing: 3px;
       text-transform: uppercase;
-      font-size: 1.5rem;
+      font-size: 100%;
+
       width: max-content;
       position: relative;
       background: $fr-color;
@@ -66,39 +73,142 @@ $img-size: 400px;
   }
 }
 
-// @media screen and (max-width: 960px) {
-//   .about-content {
-//     width: 50%;
-//     flex-direction: column;
+// /* Large desktop */
+@media (max-width: 1450px) {
+  .about-content {
+    .image-content {
+      width: 50%;
+      height: 100%;
+      margin-bottom: 10rem;
+      .image {
+        width: 70%;
+        border-radius: 5px;
+        height: 50%;
+      }
+    }
+    .about-text {
+      width: 50%;
+      font-size: 1.2rem;
+      h4 {
+        font-size: 100%;
+        span {
+          font-size: 125%;
+        }
+      }
+      p {
+        font-size: 83, 33%;
+        text-align: center;
+      }
+      .button {
+        font-size: 100%;
+        margin-left: 7.5rem;
+      }
+    }
+  }
+}
 
-//     .image-content {
-//       .image {
-//         width: 350px;
-//         height: 300px;
-//         margin-bottom: 20px;
-//         margin-top: 20px;
-//       }
-//     }
-//     .about-text {
-//       width: 150%;
-//       h4 {
-//         font-size: 1.5rem;
-//         span {
-//           font-size: 2rem;
-//         }
-//       }
-//       p {
-//         font-size: 1.25rem;
-//       }
+// /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1250px) {
+  .about-content {
+    flex-direction: column;
+    justify-content: center;
 
-//       button {
-//         &::after {
-//         }
-//         &:hover::after {
-//           a {
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+    .image-content {
+      height: 52.5rem;
+      width: 48rem;
+      margin-bottom: -20rem;
+      .image {
+        margin-left: 6.5rem;
+      }
+    }
+    .about-text {
+      width: 40rem;
+      text-align: center;
+      h4 {
+        font-size: 100%;
+        span {
+          font-size: 125%;
+        }
+      }
+      p {
+        font-size: 83, 33%;
+        text-align: center;
+      }
+      .button {
+        font-size: 100%;
+        margin-left: 7.5rem;
+      }
+    }
+  }
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .about-content {
+    flex-direction: column;
+    justify-content: center;
+
+    .image-content {
+      height: 38.5rem;
+      width: 33rem;
+      margin-bottom: -15rem;
+      .image {
+        margin-left: 6.5rem;
+      }
+    }
+    .about-text {
+      width: 35rem;
+      h4 {
+        font-size: 100%;
+        span {
+          font-size: 125%;
+        }
+      }
+      p {
+        font-size: 83, 33%;
+        text-align: center;
+      }
+      .button {
+        font-size: 100%;
+        margin-left: 7.5rem;
+      }
+    }
+  }
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+  .about-content {
+    flex-direction: column;
+    justify-content: center;
+
+    .image-content {
+      height: 35rem;
+      width: 30rem;
+      margin-bottom: -15rem;
+      .image {
+        margin-left: 4.5rem;
+      }
+    }
+    .about-text {
+      font-size: 1.2rem;
+      width: 20rem;
+      h4 {
+        font-size: 100%;
+        text-align: center;
+
+        span {
+          font-size: 125%;
+        }
+      }
+      p {
+        font-size: 83, 33%;
+        text-align: center;
+      }
+      .button {
+        font-size: 1.2rem;
+        margin-left: 4.5rem;
+      }
+    }
+  }
+}

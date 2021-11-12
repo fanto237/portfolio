@@ -1,13 +1,13 @@
 $space-wrapper: 50px;
 
 @mixin about-wrapper($bg-color, $fr-color, $position) {
-  min-height: 60vh;
+  min-height: 60%;
   width: 100%;
   display: $position;
   background: $bg-color;
   color: $fr-color;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 9.375rem;
+  padding-right: 9.375rem;
   padding-bottom: $space-wrapper;
   padding-top: $space-wrapper;
   justify-content: center;
@@ -22,14 +22,45 @@ $space-wrapper: 50px;
 .wrapper2 {
   @include about-wrapper(black, white, flex);
   .skill-wrapper {
+    // width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
+    column-gap: 3rem;
   }
 }
 
 .wrapper3 {
   @include about-wrapper(white, black, flex);
   min-height: 40vh;
-  height: 60vh;
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+  .wrapper2 {
+    .skill-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      width: 5rem;
+    }
+  }
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .wrapper2 {
+    .skill-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      width: 25rem;
+    }
+  }
+}
+
+// /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .wrapper2 {
+    .skill-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      width: 30rem;
+      column-gap: 10rem;
+    }
+  }
 }

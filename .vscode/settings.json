@@ -13,5 +13,6 @@
         "hotspot",
         "Lebenslauf",
         "Metadecoration"
-    ]
+    ],
+    "cmake.configureOnOpen": false
 }

@@ -8,10 +8,10 @@ $fr-color: rgba(86, 233, 86, 0.657);
   background: black;
 
   .social {
-    $scaler: 80px;
+    $scaler: 5rem;
     display: flex;
     a {
-      font-size: 50px;
+      font-size: 3.125rem;
       border: 1px solid white;
       width: $scaler;
       height: $scaler;
@@ -26,16 +26,18 @@ $fr-color: rgba(86, 233, 86, 0.657);
       &:hover {
         transform: scale(0.5) translateY(-15px);
         color: $fr-color;
-        border: 1px solid $fr-color;
+        border: 0.063rem solid $fr-color;
       }
     }
   }
 
   .copyright {
     font-size: 1rem;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 0.313rem;
+    margin-bottom: 1.25rem;
     background: black;
+    text-align: center;
+
     a {
       text-decoration: none;
       color: $fr-color;

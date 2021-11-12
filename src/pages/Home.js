@@ -21,12 +21,10 @@ function Home() {
           <p>
             Feel free to click to the button down below, to know more about me
           </p>
-          <button>
-            <Link to="/about" className="toAbou" t>
-              {" "}
-              Learn More <FontAwesomeIcon icon={faArrowCircleRight} />
-            </Link>
-          </button>
+          <Link to="/about" className="toAbout">
+            {" "}
+            Learn More <FontAwesomeIcon icon={faArrowCircleRight} />
+          </Link>
         </div>
       </div>
     </div>

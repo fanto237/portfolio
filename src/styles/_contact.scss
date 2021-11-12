@@ -26,3 +26,32 @@ $fr-color: rgba(86, 233, 86, 0.657);
     }
   }
 }
+
+// /* Large desktop */
+@media (max-width: 1500px) {
+  .contact {
+    width: 50rem;
+  }
+}
+
+// /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .contact {
+    width: 40rem;
+  }
+}
+
+// /* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .contact {
+    width: 30rem;
+  }
+}
+
+// /* Landscape phones and down */
+@media (max-width: 480px) {
+  .contact {
+    font-size: 1.5rem;
+    width: 20rem;
+  }
+}
