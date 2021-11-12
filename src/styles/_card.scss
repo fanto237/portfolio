@@ -73,7 +73,7 @@ $h-content: max-content;
   }
 }
 
-@mixin noHover {
+@media (hover) {
   .card-content {
     transform: translateY(65%);
     transition: transform 500ms ease;
@@ -100,25 +100,11 @@ $h-content: max-content;
   }
 }
 
-@media (hover) {
-  @include noHover();
-}
-
 // /* Landscape phones and down */
 @media (max-width: 480px) {
-  @include noHover();
   .card {
     width: 18rem;
     height: 20rem;
     padding-top: 5.5rem;
-
-    .card-content {
-      .card-title {
-      }
-      .card-description {
-      }
-      .button {
-      }
-    }
   }
 }
