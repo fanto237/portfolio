@@ -37,3 +37,6 @@ studio/node_modules
 # Compiled sanity studio
 studio/dist
 
+
+#build file 
+/*.zip
