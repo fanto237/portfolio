@@ -1,5 +1,5 @@
 import "./App.scss";
-import { Switch, Route, HashRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -11,7 +11,7 @@ import SinglePost from "./components/SinglePost";
 function App() {
   return (
     <div className="App">
-      <HashRouter basename="/">
+      <BrowserRouter>
         <div className="navigation">
           <Navbar />
         </div>
@@ -29,7 +29,7 @@ function App() {
         <div className="footer">
           <Footer />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
